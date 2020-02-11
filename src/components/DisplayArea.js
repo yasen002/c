@@ -19,6 +19,7 @@ export class DisplayArea extends Component {
     return (
       <div>
         <p>Currently, this project only detectes C++ syntax, and store the data in State. I am looking to team with someone who is good at CSS animation or D3 JS</p>
+        <p>I wrote the C++ sytax detecting logorithm myself without a help of any npm library</p>
         <ul>
           <li>Variable Name:  {varName}</li>
           <li>Data Type:  {varType}</li>
