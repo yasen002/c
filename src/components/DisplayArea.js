@@ -18,9 +18,9 @@ export class DisplayArea extends Component {
     return (
       <div>
         <p>
-          this is a program that detects user input and translates it into C
-          languate. writen in vanilla JS using React framework without any C
-          language node package.
+          this is a program that detects C++ Primitive Data Types from user
+          input and translates it into C++. writen in vanilla JS using React
+          framework without any C++ node package.
         </p>
         <ul>
           <li>Variable Name: {varName}</li>

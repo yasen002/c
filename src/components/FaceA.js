@@ -32,17 +32,17 @@ export class FaceA extends Component {
     if (dataType != null) {
       var varNameStart = value.replace(dataType, "");
       await this.varName(varNameStart);
-    }
 
-    //SET VAR VALUE AND AUTOSPACE
-    if (varName != null && !varName.endsWith(";")) {
-      var varValueStart = value.replace(dataType + varName + " = ", "");
-      this.varValue(varValueStart);
-    }
+      //SET VAR VALUE AND AUTOSPACE
+      if (varName != null && !varName.endsWith(";")) {
+        var varValueStart = value.replace(dataType + varName + " = ", "");
+        this.varValue(varValueStart);
 
-    //END LINE WITH ';'
-    if (value.endsWith(";") && this.state.varName) {
-      this.endSentence();
+        //END LINE WITH ';'
+        if (value.endsWith(";") && this.state.varName) {
+          this.endSentence();
+        }
+      }
     }
   };
 
