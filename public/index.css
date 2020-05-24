@@ -4,50 +4,19 @@
 }
 
 body {
-    background-image: url("./images/topography.svg"),
-      linear-gradient(110deg, #f93d66, #6d47d9);
-  background-size: 340px, auto;
-  min-height: calc(100vh - 100px);
-  margin: 50px;   
-  background-attachment: fixed;
-  letter-spacing: -1px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 5px 0;
-}
-/* Each item in our grid will contain numbers */
-.item {
-  /* We center the contents of these items. You can also do this with flexbox too! */
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
-  border-radius: 3px;
-  font-size: 35px;
-  background-color: var(--yellow); /* best colour */
-}
-
-.item p {
-  margin: 0 0 5px 0;
-}
-
-.bodyContent{
-  /* border: solid black; */
-  background-image: url("./images/topography.svg"),
-  linear-gradient(110deg,#6d47d9, #f93d66 );
-  border-radius: 20px;
+  background-image: linear-gradient(45deg, #00a9a9, #cbffff);
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
+  position: relative;
 }
 
-.faceDisplay{
+.bodyContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faceDisplay {
   display: grid;
   grid-template-columns: 1fr;
   flex-direction: column;
@@ -56,29 +25,15 @@ h6 {
   border: 50px;
 }
 
-.inputCodeArea{
-  width: 80%;
-  height: 50%;
-  display: grid;
-  grid-template-columns: 1fr; 
+.inputCodeArea {
+  width: 100%;
+  height: 60px;
 }
 
-.defaultTextBox{
-  background: #6d47d9;
-  border: #f93d66 solid;    
-  border-radius: 15px 15px 0 0;
-  overflow: hidden;
-  perspective: 1px;
-
-}
-.defaultTextBox[type="text"]{
+.textBox {
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+  border-style: hidden;
   font-size: 50px;
-}
-
-.inputCodeArea label{
-  background: #6d47d9;
-  border: #f93d66 solid;    
-  border-radius: 15px 15px 0 0;
-  overflow: hidden;
-  perspective: 1px;
 }
